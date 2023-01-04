@@ -1,41 +1,33 @@
-#textarea{
-    width: 85%;
-    border: 2px solid black;
-    border-radius: 6px;
-    height: 30px;
-    font-size: 22px;
-    font-weight: bold;
-    align-items: center;
-    margin: auto;
-    margin-bottom: 30px;
-    text-align: center;
-    max-width: 1085px;
+.formInput{
     display: flex;
-    justify-content: center;
-    background-color: aliceblue;
+    flex-direction: column;
+    width: 280px;
 }
 
-#buttons{
-   
-    align-items: center;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-   
+input{
+    padding: 15px;
+    margin: 10px 0px;
+    border-radius: 5px;
+    border: 1px solid black;
 }
 
 
-#lowercase{
-    display: flex;
-    font-weight: bold;
+label{
+    font-size: 12px;
+    color: gray;
 }
 
-#uppercase{
-    display: flex;
-    font-weight: bold;
+span{
+    font-size: 12px;
+    padding: 3px;
+    color: red;
+    display: none;
 }
 
-#heading{
-    color: rgb(51, 53, 46);
+input:invalid[focused="true"]{
+    border: 1px solid red;
 }
 
+input:invalid[focused="true"] ~ span{
+    display: block;
+}
